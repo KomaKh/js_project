@@ -8,12 +8,11 @@ const personalMovieDb = {
     private: false
 };
 
-const a = prompt('Один из последних просмотренных фильмов?', ''),
-b = prompt('На сколько оцените его?', ''),
-c = prompt('Один из последних просмотренных фильмов?', ''),
-d = prompt('На сколько оцените его?', '');
-
-personalMovieDb.movies[a] = b;
-personalMovieDb.movies[c] = d;
+for (let i = 0; i < 2; i++) {
+    const a = prompt('Один из последних просмотренных фильмов?', ''),
+    b = prompt('На сколько оцените его?', '');
+    
+    personalMovieDb.movies[a] = b;
+}
 
 console.log(personalMovieDb);
